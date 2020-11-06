@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source       = { :git => "https://github.com/Pizzo15/LPLiquidSwiftTabBar.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/Pizzo15/LPLiquidSwiftTabBar.git", :tag => spec.version, :branch => "main" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
