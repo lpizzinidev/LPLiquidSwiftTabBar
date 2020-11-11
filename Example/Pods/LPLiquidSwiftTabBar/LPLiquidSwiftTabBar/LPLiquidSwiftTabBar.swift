@@ -11,16 +11,16 @@ import UIKit
 @IBDesignable
 open class LPLiquidSwiftTabBar : UIView
 {
-    @objc
+    @IBInspectable
     open var selectedTabItem: Int = 0
     
-    @objc
+    @IBInspectable
     open var tabBarHeight: CGFloat = 72
     
-    @objc
+    @IBInspectable
     open var tabBarItemTintColor: UIColor = .black
     
-    @objc
+    @IBInspectable
     open var tabBarSelectedItemTintColor: UIColor = .black
     
     @objc

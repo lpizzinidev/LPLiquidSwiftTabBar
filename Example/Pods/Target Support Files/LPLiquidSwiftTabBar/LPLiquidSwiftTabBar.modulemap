@@ -1,0 +1,6 @@
+module LPLiquidSwiftTabBar {
+  umbrella header "LPLiquidSwiftTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

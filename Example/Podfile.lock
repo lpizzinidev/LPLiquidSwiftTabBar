@@ -1,0 +1,16 @@
+PODS:
+  - LPLiquidSwiftTabBar (0.0.1)
+
+DEPENDENCIES:
+  - LPLiquidSwiftTabBar
+
+SPEC REPOS:
+  trunk:
+    - LPLiquidSwiftTabBar
+
+SPEC CHECKSUMS:
+  LPLiquidSwiftTabBar: 24ee9d7fb34c398f6dc16f1de70da1d36b52f4f0
+
+PODFILE CHECKSUM: f3f482844008bdf56907e004a8d7b57dad8e4b32
+
+COCOAPODS: 1.10.0

@@ -18,7 +18,19 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPC-UD-TXq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukc-2B-WJ3" customClass="LPLiquidSwiftTabBar" customModule="LPLiquidSwiftTabBar">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ukc-2B-WJ3" secondAttribute="trailing" id="1fn-Pi-1D0"/>
+                                    <constraint firstItem="Ukc-2B-WJ3" firstAttribute="top" secondItem="BPC-UD-TXq" secondAttribute="top" id="9R8-0k-PS1"/>
+                                    <constraint firstItem="Ukc-2B-WJ3" firstAttribute="leading" secondItem="BPC-UD-TXq" secondAttribute="leading" id="Gfw-u7-jx8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ukc-2B-WJ3" secondAttribute="bottom" id="JhJ-v9-Dqs"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -30,6 +42,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BPC-UD-TXq" secondAttribute="bottom" id="fIM-sS-tdI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="liquidTabBar" destination="Ukc-2B-WJ3" id="0YC-ad-Urm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
