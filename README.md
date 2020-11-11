@@ -48,7 +48,7 @@ Finally, add the new element to the tab bar:
 liquidTabBar.add(newLiquidTabBarItem: tabItem, withViewController: vc)
 ```
 
-**Important** `LPLiquidSwiftTabBarItem` allows to use up to 5 tab items.
+**Important:** `LPLiquidSwiftTabBarItem` allows to use up to 5 tab items.
 
 ### Attributes
 
@@ -65,7 +65,6 @@ liquidTabBar.tabBarItemFont: UIFont = UIFont.systemFont(ofSize: 16.0)
 
 liquidTabBar.animationDuration: Double = 0.25
 ```
-
 
 ## License
 
