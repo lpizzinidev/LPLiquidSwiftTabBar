@@ -66,6 +66,6 @@ liquidTabBar.tabBarItemFont: UIFont = UIFont.systemFont(ofSize: 16.0)
 liquidTabBar.animationDuration: Double = 0.25
 ```
 
-## License
+## License
 
 `LPLiquidSwiftTabBar` is available under the MIT license. See the LICENSE file for more info.
