@@ -8,7 +8,7 @@ You can add up to 5 tabs with associated `UIViewController` and customize some s
 
 ### CocoaPods
 
-`LPLiquidSwiftTabBar` is available fot installation trough [https://cocoapods.org](CocoaPods). For usage and installation instruction, visit their website.
+`LPLiquidSwiftTabBar` is available fot installation trough [CocoaPods](https://cocoapods.org). For usage and installation instruction, visit their website.
 To install this library simply add this line to you `Podfile`:
 ```
 pod 'LPLiquidSwiftTabBar'
@@ -66,6 +66,6 @@ liquidTabBar.tabBarItemFont: UIFont = UIFont.systemFont(ofSize: 16.0)
 liquidTabBar.animationDuration: Double = 0.25
 ```
 
-## License
+## License
 
 `LPLiquidSwiftTabBar` is available under the MIT license. See the LICENSE file for more info.

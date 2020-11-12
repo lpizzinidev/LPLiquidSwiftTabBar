@@ -13,33 +13,44 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var liquidTabBar: LPLiquidSwiftTabBar!
 
+    private let timeout = 2.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLiquidTabBar()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + timeout) {
+            // self.liquidTabBar.selectta = 1
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + (self.timeout * 2)) {
+                self.liquidTabBar.selectedTabItem = 2
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + (self.timeout * 3)) {
+                    self.liquidTabBar.selectedTabItem = 0
+                }
+            }
+        }
     }
     
     private func setupLiquidTabBar()
     {
+        liquidTabBar.tabBarItemTintColor = UIColor(named: "primary")!
+        liquidTabBar.tabBarSelectedItemTintColor = UIColor(named: "primary")!
+        
         liquidTabBar.tabBarItemFont = UIFont.boldSystemFont(ofSize: 17)
         liquidTabBar.tabBarAnimationDuration = 0.4
         
-        let firstVC = UIViewController()
-        firstVC.view.backgroundColor = .red
+        let homeLiquidTabItem = LPLiquidSwiftTabBarItem(title: "Home", image:  UIImage(systemName: "house")!)
+        liquidTabBar.add(newLiquidTabBarItem: homeLiquidTabItem, withViewController: UIViewController())
         
-        let firstLiquidTabItem = LPLiquidSwiftTabBarItem(title: "First", image:  UIImage(systemName: "bell")!)
-        liquidTabBar.add(newLiquidTabBarItem: firstLiquidTabItem, withViewController: firstVC)
+        let searchLiquidTabItem = LPLiquidSwiftTabBarItem(title: "Search", image:  UIImage(systemName: "magnifyingglass")!)
+        liquidTabBar.add(newLiquidTabBarItem: searchLiquidTabItem, withViewController: UIViewController())
         
-        let secondVC = UIViewController()
-        secondVC.view.backgroundColor = .green
+        let cartLiquidTabItem = LPLiquidSwiftTabBarItem(title: "Cart", image:  UIImage(systemName: "cart")!)
+        liquidTabBar.add(newLiquidTabBarItem: cartLiquidTabItem, withViewController: UIViewController())
         
-        let secondLiquidTabItem = LPLiquidSwiftTabBarItem(title: "Second", image:  UIImage(systemName: "pencil")!)
-        liquidTabBar.add(newLiquidTabBarItem: secondLiquidTabItem, withViewController: secondVC)
-        
-        let thirdVC = UIViewController()
-        thirdVC.view.backgroundColor = .blue
-        
-        let thirdLiquidTabItem = LPLiquidSwiftTabBarItem(title: "Third", image:  UIImage(systemName: "trash")!)
-        liquidTabBar.add(newLiquidTabBarItem: thirdLiquidTabItem, withViewController: thirdVC)
+        let accountLiquidTabItem = LPLiquidSwiftTabBarItem(title: "Account", image:  UIImage(systemName: "person.crop.circle")!)
+        liquidTabBar.add(newLiquidTabBarItem: accountLiquidTabItem, withViewController: UIViewController())
     }
 }
 

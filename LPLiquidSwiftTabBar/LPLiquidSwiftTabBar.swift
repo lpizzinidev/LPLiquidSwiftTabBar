@@ -107,7 +107,8 @@ open class LPLiquidSwiftTabBar : UIView
         tabBarVcList.append(vc)
     }
     
-    func selectTab(atIndex index: Int)
+    @objc
+    open func selectTab(atIndex index: Int)
     {
         guard index < tabBarItemList.count && index < tabBarVcList.count else {
             fatalError("Index out of range. Selected tab \(index) with \(tabBarItemList.count) items")
