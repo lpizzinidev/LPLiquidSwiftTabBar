@@ -2,15 +2,15 @@ PODS:
   - LPLiquidSwiftTabBar (0.0.1)
 
 DEPENDENCIES:
-  - LPLiquidSwiftTabBar
+  - LPLiquidSwiftTabBar (from `../`)
 
-SPEC REPOS:
-  trunk:
-    - LPLiquidSwiftTabBar
+EXTERNAL SOURCES:
+  LPLiquidSwiftTabBar:
+    :path: "../"
 
 SPEC CHECKSUMS:
   LPLiquidSwiftTabBar: 24ee9d7fb34c398f6dc16f1de70da1d36b52f4f0
 
-PODFILE CHECKSUM: f3f482844008bdf56907e004a8d7b57dad8e4b32
+PODFILE CHECKSUM: 43df4e00a5a50645e8d701d96691a16ed0e314d7
 
 COCOAPODS: 1.10.0

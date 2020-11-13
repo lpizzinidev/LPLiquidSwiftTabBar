@@ -139,15 +139,15 @@ open class LPLiquidSwiftTabBar : UIView
         {
             let isSelected = vcIndex == self.selectedTabItem
             
+            if isSelected {
+                vcChild.view.isHidden = false
+            }
+            
             UIView.animate(
                 withDuration: self.tabBarAnimationDuration,
                 delay: 0.0,
                 options: .curveEaseInOut)
             {
-                if isSelected {
-                    vcChild.view.isHidden = false
-                }
-                
                 vcChild.view.alpha = isSelected ? 1.0 : 0.0
             } completion: { (_) in
                 vcChild.view.isHidden = !isSelected

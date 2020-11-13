@@ -3,6 +3,6 @@
 
 target 'Example' do
 
-  pod 'LPLiquidSwiftTabBar'
+  pod 'LPLiquidSwiftTabBar', :path => '../'
 
 end

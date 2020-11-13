@@ -44,50 +44,72 @@ public class LPLiquidSwiftTabBarItem : UIView
         self.image = image
     }
     
+    private var alreadySetup = false
     open override func layoutSubviews()
     {
         setup()
+    }
+    
+    private func setup()
+    {
+        if !alreadySetup {
+            translatesAutoresizingMaskIntoConstraints = false
+            
+            widthAnchor.constraint(equalToConstant: frame.width).isActive = true
+            heightAnchor.constraint(equalToConstant: tabBar.tabBarHeight).isActive = true
+            
+            layer.insertSublayer(self.fillLayer, at: 0)
+        }
         
-        let labelIconTint = isSelected ? tabBar.tabBarSelectedItemTintColor : tabBar.tabBarItemTintColor
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabClicked))
+        self.addGestureRecognizer(tapGesture)
+        
+        setupTabLabel()
+        setupTabIcon()
+        
+        let newShapePath = (isSelected ? liquidTabShapePath() : liquidTabShapePathClosed()).cgPath
+        if newShapePath != fillLayer.path {
+            fillLayer.path = newShapePath
+            fillLayer.fillColor = tabBar.tabBarSelectedItemTintColor.cgColor
+        }
+        
+        alreadySetup = true
+    }
+    
+    private func setupTabLabel()
+    {
+        let labelTint = isSelected ? tabBar.tabBarSelectedItemTintColor : tabBar.tabBarItemTintColor
         
         let frameOffset = 2.0 * self.frame.height / 3.0
         let labelFrame = CGRect(x: 0, y: 0, width: self.frame.width, height: frameOffset)
-        let iconFrame = CGRect(x: 0, y: frameOffset / 4.0, width: self.frame.width, height: frameOffset / 2.0)
+        
+        tabLabel.text = title
+        tabLabel.textAlignment = .center
         
         tabLabel.frame = labelFrame
-        tabLabel.textColor = labelIconTint
+        tabLabel.textColor = labelTint
         tabLabel.font = tabFont
         tabLabel.isHidden = !isSelected
         tabLabel.layoutIfNeeded()
         
-        tabIcon.frame = iconFrame
-        tabIcon.tintColor = labelIconTint
-        tabIcon.isHidden = isSelected
-        tabIcon.layoutIfNeeded()
-        
-        fillLayer.path = (isSelected ? liquidTabShapePath() : liquidTabShapePathClosed()).cgPath
-        fillLayer.fillColor = tabBar.tabBarSelectedItemTintColor.cgColor
-    }
-    
-    func setup()
-    {
-        translatesAutoresizingMaskIntoConstraints = false
-        
-        widthAnchor.constraint(equalToConstant: frame.width).isActive = true
-        heightAnchor.constraint(equalToConstant: tabBar.tabBarHeight).isActive = true
-        
-        layer.insertSublayer(self.fillLayer, at: 0)
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabClicked))
-        self.addGestureRecognizer(tapGesture)
-
-        tabLabel.text = title
-        tabLabel.textAlignment = .center
         
         self.addSubview(tabLabel)
+    }
+    
+    private func setupTabIcon()
+    {
+        let iconTint = isSelected ? tabBar.tabBarSelectedItemTintColor : tabBar.tabBarItemTintColor
+        
+        let frameOffset = 2.0 * self.frame.height / 3.0
+        let iconFrame = CGRect(x: 0, y: frameOffset / 4.0, width: self.frame.width, height: frameOffset / 2.0)
         
         tabIcon.image = image.withRenderingMode(.alwaysTemplate)
         tabIcon.contentMode = .scaleAspectFit
+        
+        tabIcon.frame = iconFrame
+        tabIcon.tintColor = iconTint
+        tabIcon.isHidden = isSelected
+        tabIcon.layoutIfNeeded()
         
         self.addSubview(tabIcon)
     }
@@ -139,6 +161,7 @@ public class LPLiquidSwiftTabBarItem : UIView
     private func animate()
     {
         CATransaction.begin()
+        
         CATransaction.setCompletionBlock {
             self.layoutSubviews()
         }
@@ -162,6 +185,9 @@ public class LPLiquidSwiftTabBarItem : UIView
         {
             self.tabLabel.alpha = self.isSelected ? 1.0 : 0.0
             self.tabIcon.alpha = self.isSelected ? 0.0 : 1.0
+        } completion: { (_) in
+            self.tabLabel.isHidden = !self.isSelected
+            self.tabIcon.isHidden = self.isSelected
         }
 
     }

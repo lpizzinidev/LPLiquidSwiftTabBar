@@ -13,20 +13,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var liquidTabBar: LPLiquidSwiftTabBar!
 
-    private let timeout = 2.0
+    private let timeout = 1.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLiquidTabBar()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + timeout) {
-            // self.liquidTabBar.selectta = 1
+            self.liquidTabBar.selectTab(atIndex: 1)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + (self.timeout * 2)) {
-                self.liquidTabBar.selectedTabItem = 2
+                self.liquidTabBar.selectTab(atIndex: 2)
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + (self.timeout * 3)) {
-                    self.liquidTabBar.selectedTabItem = 0
+                    self.liquidTabBar.selectTab(atIndex: 0)
                 }
             }
         }

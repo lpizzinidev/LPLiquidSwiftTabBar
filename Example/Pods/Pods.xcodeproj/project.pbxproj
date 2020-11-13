@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2948F80F6A9F762762D1FE5F6DFC72A6 /* LPLiquidSwiftTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D448299F1915F122A9C158846F9F7 /* LPLiquidSwiftTabBar.swift */; };
-		6B70B939C5CF4F6FA77ECA692BDAECF5 /* LPLiquidSwiftTabBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6318032659FD9B5DF969BA9607B68F0 /* LPLiquidSwiftTabBar-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2948F80F6A9F762762D1FE5F6DFC72A6 /* LPLiquidSwiftTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BEAE44B982E2CC88D7F9240C04E /* LPLiquidSwiftTabBar.swift */; };
+		6B70B939C5CF4F6FA77ECA692BDAECF5 /* LPLiquidSwiftTabBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE586B4D0DB0FA291B7421C0455308E /* LPLiquidSwiftTabBar-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6EB044F7D061E0F37B163E70908ABBCF /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A10118860486B1C21B46B8EC8C08425 /* Pods-Example-dummy.m */; };
 		764503F18BDF1C73F5E321A5F6296748 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 156BF54520F2121642B61B54902E7808 /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AF0DDF65D8871812B7A41E98532B5F28 /* LPLiquidSwiftTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198D370669BC6A4DB8E4460E6DD5BB1 /* LPLiquidSwiftTabBarItem.swift */; };
-		F67A68BF8BC4D7D7D087116BBEA227BB /* LPLiquidSwiftTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B581C0B255A3C3BED41707833861 /* LPLiquidSwiftTabBar-dummy.m */; };
+		AF0DDF65D8871812B7A41E98532B5F28 /* LPLiquidSwiftTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B57ABBF238453F3E0F266A2E12C8697 /* LPLiquidSwiftTabBarItem.swift */; };
+		F67A68BF8BC4D7D7D087116BBEA227BB /* LPLiquidSwiftTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5559929D6C5B10B96196E6BE7C412D19 /* LPLiquidSwiftTabBar-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		78DC04CAF42F7F321D9DFAC79F1D87FC /* PBXContainerItemProxy */ = {
+		A27269012DC247D5BEA8556078753BBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -26,24 +26,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B57ABBF238453F3E0F266A2E12C8697 /* LPLiquidSwiftTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LPLiquidSwiftTabBarItem.swift; path = LPLiquidSwiftTabBar/LPLiquidSwiftTabBarItem.swift; sourceTree = "<group>"; };
+		1470EA7EDA6628E15B3F18DE6A6C8B90 /* LPLiquidSwiftTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPLiquidSwiftTabBar.release.xcconfig; sourceTree = "<group>"; };
 		156BF54520F2121642B61B54902E7808 /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		1C8913EBCA000790DD8DE07496BA6D8E /* LPLiquidSwiftTabBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LPLiquidSwiftTabBar.modulemap; sourceTree = "<group>"; };
 		1F667CC0E19EAF34E5A4119E2121F585 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Example.a"; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1D448299F1915F122A9C158846F9F7 /* LPLiquidSwiftTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LPLiquidSwiftTabBar.swift; path = LPLiquidSwiftTabBar/LPLiquidSwiftTabBar.swift; sourceTree = "<group>"; };
-		3198D370669BC6A4DB8E4460E6DD5BB1 /* LPLiquidSwiftTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LPLiquidSwiftTabBarItem.swift; path = LPLiquidSwiftTabBar/LPLiquidSwiftTabBarItem.swift; sourceTree = "<group>"; };
 		3D6746E07DAA8BF046F4230C613B314E /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		53A341026EB50DB44BD6D7600982D503 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		5559929D6C5B10B96196E6BE7C412D19 /* LPLiquidSwiftTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPLiquidSwiftTabBar-dummy.m"; sourceTree = "<group>"; };
 		5A10118860486B1C21B46B8EC8C08425 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
 		6182A0AA3A5F3AACDC97877E6DB2BE5B /* libLPLiquidSwiftTabBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLPLiquidSwiftTabBar.a; path = libLPLiquidSwiftTabBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6596845240DBE9C59BDE0235A00EE94E /* LPLiquidSwiftTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPLiquidSwiftTabBar.release.xcconfig; sourceTree = "<group>"; };
-		6BDCE4C07EBCA700BFE162256AF02A9E /* LPLiquidSwiftTabBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LPLiquidSwiftTabBar.modulemap; sourceTree = "<group>"; };
-		6C153721D17202504CFC0F97D412052E /* LPLiquidSwiftTabBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPLiquidSwiftTabBar-prefix.pch"; sourceTree = "<group>"; };
-		75D4B581C0B255A3C3BED41707833861 /* LPLiquidSwiftTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPLiquidSwiftTabBar-dummy.m"; sourceTree = "<group>"; };
+		6EE586B4D0DB0FA291B7421C0455308E /* LPLiquidSwiftTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPLiquidSwiftTabBar-umbrella.h"; sourceTree = "<group>"; };
 		763B5F5D6D7214D56B655DE87625A480 /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89820BEAE44B982E2CC88D7F9240C04E /* LPLiquidSwiftTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LPLiquidSwiftTabBar.swift; path = LPLiquidSwiftTabBar/LPLiquidSwiftTabBar.swift; sourceTree = "<group>"; };
 		9A3D778F0C0BA5A11B556A6026C20B46 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9A8BC4CE72A41A90356C6098C5A88AF7 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C6318032659FD9B5DF969BA9607B68F0 /* LPLiquidSwiftTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPLiquidSwiftTabBar-umbrella.h"; sourceTree = "<group>"; };
-		D534C3818E07AFBE4A1D6D31844FAB76 /* LPLiquidSwiftTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPLiquidSwiftTabBar.debug.xcconfig; sourceTree = "<group>"; };
+		AE72E26542F342708118AD30327E0B6D /* LPLiquidSwiftTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPLiquidSwiftTabBar.debug.xcconfig; sourceTree = "<group>"; };
+		C3CE38A1E40597BE9F5ACD1459A1B451 /* LPLiquidSwiftTabBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LPLiquidSwiftTabBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CE435A6F9DA0969DAA1871813F7932F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DA61414221D3B2B80569951DF8691907 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FF3961DF9D4C2B1A277318C5A3A21B64 /* LPLiquidSwiftTabBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPLiquidSwiftTabBar-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,28 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1456C284678EF4D70C447BEF43377387 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6BDCE4C07EBCA700BFE162256AF02A9E /* LPLiquidSwiftTabBar.modulemap */,
-				75D4B581C0B255A3C3BED41707833861 /* LPLiquidSwiftTabBar-dummy.m */,
-				6C153721D17202504CFC0F97D412052E /* LPLiquidSwiftTabBar-prefix.pch */,
-				C6318032659FD9B5DF969BA9607B68F0 /* LPLiquidSwiftTabBar-umbrella.h */,
-				D534C3818E07AFBE4A1D6D31844FAB76 /* LPLiquidSwiftTabBar.debug.xcconfig */,
-				6596845240DBE9C59BDE0235A00EE94E /* LPLiquidSwiftTabBar.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LPLiquidSwiftTabBar";
-			sourceTree = "<group>";
-		};
-		417A0CA46718A4F84D6385F684D87EB1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BB21301D8CDBEF71B519BF7A09BEBA47 /* LPLiquidSwiftTabBar */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		45BF6390E4DB7E143C827E9EE4118525 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,23 +75,42 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BB21301D8CDBEF71B519BF7A09BEBA47 /* LPLiquidSwiftTabBar */ = {
+		7B79B40133FEC8AB67A5DDD761B3F5C5 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2F1D448299F1915F122A9C158846F9F7 /* LPLiquidSwiftTabBar.swift */,
-				3198D370669BC6A4DB8E4460E6DD5BB1 /* LPLiquidSwiftTabBarItem.swift */,
-				1456C284678EF4D70C447BEF43377387 /* Support Files */,
+				C2FA7C9803768FC6017B2687E1E521B4 /* LPLiquidSwiftTabBar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A42A0D6FF6AEC41DAF022C134BDCF1A5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CE435A6F9DA0969DAA1871813F7932F4 /* LICENSE */,
+				C3CE38A1E40597BE9F5ACD1459A1B451 /* LPLiquidSwiftTabBar.podspec */,
+				DA61414221D3B2B80569951DF8691907 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C2FA7C9803768FC6017B2687E1E521B4 /* LPLiquidSwiftTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				89820BEAE44B982E2CC88D7F9240C04E /* LPLiquidSwiftTabBar.swift */,
+				0B57ABBF238453F3E0F266A2E12C8697 /* LPLiquidSwiftTabBarItem.swift */,
+				A42A0D6FF6AEC41DAF022C134BDCF1A5 /* Pod */,
+				E97D6D23CEDE37BCBF76F0BFC05FDA89 /* Support Files */,
 			);
 			name = LPLiquidSwiftTabBar;
-			path = LPLiquidSwiftTabBar;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7B79B40133FEC8AB67A5DDD761B3F5C5 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				417A0CA46718A4F84D6385F684D87EB1 /* Pods */,
 				F155113DA4CD81E896CB598E53193C04 /* Products */,
 				45BF6390E4DB7E143C827E9EE4118525 /* Targets Support Files */,
 			);
@@ -136,6 +136,20 @@
 			);
 			name = "Pods-Example";
 			path = "Target Support Files/Pods-Example";
+			sourceTree = "<group>";
+		};
+		E97D6D23CEDE37BCBF76F0BFC05FDA89 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C8913EBCA000790DD8DE07496BA6D8E /* LPLiquidSwiftTabBar.modulemap */,
+				5559929D6C5B10B96196E6BE7C412D19 /* LPLiquidSwiftTabBar-dummy.m */,
+				FF3961DF9D4C2B1A277318C5A3A21B64 /* LPLiquidSwiftTabBar-prefix.pch */,
+				6EE586B4D0DB0FA291B7421C0455308E /* LPLiquidSwiftTabBar-umbrella.h */,
+				AE72E26542F342708118AD30327E0B6D /* LPLiquidSwiftTabBar.debug.xcconfig */,
+				1470EA7EDA6628E15B3F18DE6A6C8B90 /* LPLiquidSwiftTabBar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LPLiquidSwiftTabBar";
 			sourceTree = "<group>";
 		};
 		F155113DA4CD81E896CB598E53193C04 /* Products */ = {
@@ -180,7 +194,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EAAC57FBEFAD0F8B3499D87441323672 /* PBXTargetDependency */,
+				F3BAA4215CE17A4ABE0350FE52565809 /* PBXTargetDependency */,
 			);
 			name = "Pods-Example";
 			productName = "Pods-Example";
@@ -282,11 +296,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EAAC57FBEFAD0F8B3499D87441323672 /* PBXTargetDependency */ = {
+		F3BAA4215CE17A4ABE0350FE52565809 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LPLiquidSwiftTabBar;
 			target = 17BCA147E9660F588A5093582E96379A /* LPLiquidSwiftTabBar */;
-			targetProxy = 78DC04CAF42F7F321D9DFAC79F1D87FC /* PBXContainerItemProxy */;
+			targetProxy = A27269012DC247D5BEA8556078753BBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -443,7 +457,7 @@
 		};
 		C29BAC6247BDB1FA7A989B879174D192 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6596845240DBE9C59BDE0235A00EE94E /* LPLiquidSwiftTabBar.release.xcconfig */;
+			baseConfigurationReference = 1470EA7EDA6628E15B3F18DE6A6C8B90 /* LPLiquidSwiftTabBar.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -492,7 +506,7 @@
 		};
 		D3CEF10C44D936189607D7DD435AF192 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D534C3818E07AFBE4A1D6D31844FAB76 /* LPLiquidSwiftTabBar.debug.xcconfig */;
+			baseConfigurationReference = AE72E26542F342708118AD30327E0B6D /* LPLiquidSwiftTabBar.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
