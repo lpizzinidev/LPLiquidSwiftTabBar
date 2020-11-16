@@ -1,4 +1,6 @@
 
+![Banner](https://github.com/Pizzo15/LPLiquidSwiftTabBar/images/banner.jpg)
+
 # LPLiquidSwiftTabBar
 
 `LPLiquidSwiftTabBar` is an easy to use, animated, elegant, tab bar for iOS.
