@@ -1,5 +1,5 @@
 
-![Banner](https://github.com/Pizzo15/LPLiquidSwiftTabBar/images/banner.jpg)
+![Banner](https://github.com/Pizzo15/LPLiquidSwiftTabBar/blob/main/images/banner.jpg)
 
 # LPLiquidSwiftTabBar
 
