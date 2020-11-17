@@ -6,6 +6,8 @@
 `LPLiquidSwiftTabBar` is an easy to use, animated, elegant, tab bar for iOS.
 You can add up to 5 tabs with associated `UIViewController` and customize some styling parameters.
 
+![LPLiquidSwiftTabBar](https://github.com/Pizzo15/LPLiquidSwiftTabBar/blob/main/images/banner_video.gif)
+
 ## Installation 
 
 ### CocoaPods
