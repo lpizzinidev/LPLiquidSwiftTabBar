@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var liquidTabBar: LPLiquidSwiftTabBar!
 
-    private let timeout = 1.0
+    private let timeout = 0.5
     
     override func viewDidLoad() {
         super.viewDidLoad()
