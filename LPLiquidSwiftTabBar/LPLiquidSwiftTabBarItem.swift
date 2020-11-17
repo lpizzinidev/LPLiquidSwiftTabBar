@@ -14,7 +14,7 @@ public class LPLiquidSwiftTabBarItem : UIView
     
     private let tabLabel = UILabel()
     private let tabIcon = UIImageView()
-    
+    let view = UIView()
     private var title = ""
     private var image = UIImage()
     
