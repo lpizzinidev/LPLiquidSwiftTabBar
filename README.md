@@ -13,9 +13,17 @@ You can add up to 5 tabs with associated `UIViewController` and customize some s
 ### CocoaPods
 
 `LPLiquidSwiftTabBar` is available for installation trough [CocoaPods](https://cocoapods.org). For usage and installation instruction, visit their website.
-To install this library simply add this line to you `Podfile`:
+To install this library simply add this line in your `Podfile`:
 ```
 pod 'LPLiquidSwiftTabBar'
+```
+
+### Carthage
+
+`LPLiquidSwiftTabBar` is available for installation trough [Carthage](https://github.com/Carthage/Carthage). For usage and installation instruction, visit their website.
+To integrate this library add this line in your `Cartfile`:
+```
+github "Pizzo15/LPLiquidSwiftTabBar"
 ```
 
 ### Manual
