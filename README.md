@@ -12,11 +12,33 @@ You can add up to 5 tabs with associated `UIViewController` and customize some s
 
 ### CocoaPods
 
-`LPLiquidSwiftTabBar` is available fot installation trough [CocoaPods](https://cocoapods.org). For usage and installation instruction, visit their website.
+`LPLiquidSwiftTabBar` is available for installation trough [CocoaPods](https://cocoapods.org). For usage and installation instruction, visit their website.
 To install this library simply add this line to you `Podfile`:
 ```
 pod 'LPLiquidSwiftTabBar'
 ```
+
+### Manual
+
+1. Open up Terminal application and `cd` into your iOS project directory
+
+2. **ONLY IF** your project is not already initialized as a git repository, run
+```
+$ git init
+```
+
+3. Add `LPLiquidSwiftTabBar` as a submodule by running
+```
+$ git submodule add https://github.com/Pizzo15/LPLiquidSwiftTabBar.git
+```
+
+4. Open the project folder and drag the `LPLiquidSwiftTabBar.xcodeproj` file into the Project Navigator of your application.
+You should drag it at the same level of your blue project icon.
+Then click Save on the Xcode dialog that shows up.
+
+5. In the Project Navigator, select your application project and go to "Targets" -> "General"
+
+6. Click the `+` button under the "Frameworks, Libraries, and Embedded Content" section and `Add` the `LPLiquidSwiftTabBar.framework`
 
 ## How to use 
 
