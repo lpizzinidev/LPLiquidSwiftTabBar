@@ -18,18 +18,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLiquidTabBar()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + timeout) {
-            self.liquidTabBar.selectTab(atIndex: 1)
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + (self.timeout * 2)) {
-                self.liquidTabBar.selectTab(atIndex: 2)
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + (self.timeout * 3)) {
-                    self.liquidTabBar.selectTab(atIndex: 0)
-                }
-            }
-        }
     }
     
     private func setupLiquidTabBar()

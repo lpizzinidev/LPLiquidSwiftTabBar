@@ -11,6 +11,7 @@ import UIKit
 @IBDesignable
 open class LPLiquidSwiftTabBar : UIView
 {
+    // MARK: - Properties
     @objc
     open var selectedTabItem: Int = 0
     
@@ -69,6 +70,7 @@ open class LPLiquidSwiftTabBar : UIView
         liquidTabBarContainer.heightAnchor.constraint(equalToConstant: tabBarHeight).isActive = true
     }
     
+    // MARK: - Methods
     @objc
     open func add(newLiquidTabBarItem tabBarItem: LPLiquidSwiftTabBarItem, withViewController vc: UIViewController)
     {

@@ -4,9 +4,41 @@
 # LPLiquidSwiftTabBar
 
 `LPLiquidSwiftTabBar` is an easy to use, animated, elegant, tab bar for iOS.
-You can add up to 5 tabs with associated `UIViewController` and customize some styling parameters.
 
 ![LPLiquidSwiftTabBar](https://github.com/Pizzo15/LPLiquidSwiftTabBar/blob/main/images/banner_video_new.gif)
+
+## Usage
+
+### Basic
+
+In your `.storyboard` file create a new `UIViewController` and add a `UIView` to it, setting its leading and trailing constraints.
+
+![Storyboard](https://github.com/Pizzo15/LPLiquidSwiftTabBar/blob/main/images/view_controller.png)
+
+Make sure this `UIView` implements the `LPLiquidSwiftTabBar` class.
+
+![Class](https://github.com/Pizzo15/LPLiquidSwiftTabBar/blob/main/images/class_module.png)
+
+Link the `LPLiquidSwiftTabBar` view to the `UIViewController` generating a new `IBOutlet` in it:
+```
+@IBOutlet weak var liquidTabBar: LPLiquidSwiftTabBar!
+```
+
+You can start adding tab items using the `add(newLiquidTabBarItem: LPLiquidSwiftTabBarItem, withViewController: UIViewController)`:
+```
+let homeLiquidTabItem = LPLiquidSwiftTabBarItem(title: "Home", image:  UIImage(systemName: "house")!)
+liquidTabBar.add(newLiquidTabBarItem: homeLiquidTabItem, withViewController: UIViewController())
+```
+
+### Customize 
+
+You can customize your `LPLiquidSwiftTabBar` by specifying the available attributes **before** you start adding `LPLiquidSwiftTabBarItem` to it.
+For example:
+```
+liquidTabBar.tabBarItemFont = UIFont.boldSystemFont(ofSize: 17)
+```
+
+See below for the complete list of available methods and attributes.
 
 ## Installation 
 
@@ -84,21 +116,23 @@ liquidTabBar.add(newLiquidTabBarItem: tabItem, withViewController: vc)
 
 **Important:** `LPLiquidSwiftTabBarItem` allows to use up to 5 tab items.
 
+### Methods
+
+Name | Description
+---- | -----------
+add(newLiquidTabBarItem: LPLiquidSwiftTabBarItem, withViewController: UIViewController) | Add a new `LPLiquidSwiftTabBarItem` to the `LPLiquidSwiftTabBar`. It allows to add up to 5 `LPLiquidSwiftTabBarItem`.
+selectTab(atIndex: Int) | Programmatically select the `LPLiquidSwiftTabBarItem` at the specified index, if available.
+
 ### Attributes
 
-```
-liquidTabBar.selectedTabItem: Int = 0
-
-liquidTabBar.tabBarHeight: CGFloat = 72
-
-liquidTabBar.tabBarItemTintColor: UIColor = .black
-
-liquidTabBar.tabBarSelectedItemTintColor: UIColor = .black
-
-liquidTabBar.tabBarItemFont: UIFont = UIFont.systemFont(ofSize: 16.0)
-
-liquidTabBar.animationDuration: Double = 0.25
-```
+Property | Description | Default value
+-------- | ----------- | -------------
+selectedTabItem | **Int** Preselected tab item | 0
+tabBarHeight | **CGFloat** The height of the bar | 72
+tabBarItemTintColor | **UIColor** The color of the unselected items in the tab bar | .black
+tabBarSelectedItemTintColor | **UIColor** The tint color of the selected item in the tab bar | .black
+tabBarItemFont | **UIFont** The font of the text of the selected tab bar item | UIFont.systemFont(ofSize: 16.0)
+animationDuration | **Double** The duration of the animations ofthe switch of `UIViewController` and tab bar selected item | 0.25
 
 ## License
 
