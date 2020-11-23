@@ -9,7 +9,7 @@
 
 ## Usage
 
-### Basic
+### Basic
 
 In your `.storyboard` file create a new `UIViewController` and add a `UIView` to it, setting its leading and trailing constraints.
 
