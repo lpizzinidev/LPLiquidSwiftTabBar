@@ -13,8 +13,6 @@
 
 In your `.storyboard` file create a new `UIViewController` and add a `UIView` to it, setting its leading and trailing constraints.
 
-![Storyboard](https://github.com/Pizzo15/LPLiquidSwiftTabBar/blob/main/images/view_controller.png)
-
 Make sure this `UIView` implements the `LPLiquidSwiftTabBar` class.
 
 ![Class](https://github.com/Pizzo15/LPLiquidSwiftTabBar/blob/main/images/class_module.png)
