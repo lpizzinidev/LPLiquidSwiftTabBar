@@ -93,7 +93,7 @@ tabBarItemFont | **UIFont** The font of the text of the selected tab bar item | 
 animationDuration | **Double** The duration of the animations ofthe switch of `UIViewController` and tab bar selected item | 0.25
 
 ## Requirements
-* iOS 11.0+
+* iOS 12.0+
 * Xcode 11+
 * Swift 5+
 
