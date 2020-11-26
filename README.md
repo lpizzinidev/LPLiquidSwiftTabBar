@@ -38,46 +38,6 @@ liquidTabBar.tabBarItemFont = UIFont.boldSystemFont(ofSize: 17)
 
 See below for the complete list of available methods and attributes.
 
-## Installation 
-
-### CocoaPods
-
-`LPLiquidSwiftTabBar` is available for installation trough [CocoaPods](https://cocoapods.org). For usage and installation instruction, visit their website.
-To install this library simply add this line in your `Podfile`:
-```
-pod 'LPLiquidSwiftTabBar'
-```
-
-### Carthage
-
-`LPLiquidSwiftTabBar` is available for installation trough [Carthage](https://github.com/Carthage/Carthage). For usage and installation instruction, visit their website.
-To integrate this library add this line in your `Cartfile`:
-```
-github "Pizzo15/LPLiquidSwiftTabBar"
-```
-
-### Manual
-
-1. Open up Terminal application and `cd` into your iOS project directory
-
-2. **ONLY IF** your project is not already initialized as a git repository, run
-```
-$ git init
-```
-
-3. Add `LPLiquidSwiftTabBar` as a submodule by running
-```
-$ git submodule add https://github.com/Pizzo15/LPLiquidSwiftTabBar.git
-```
-
-4. Open the project folder and drag the `LPLiquidSwiftTabBar.xcodeproj` file into the Project Navigator of your application.
-You should drag it at the same level of your blue project icon.
-Then click Save on the Xcode dialog that shows up.
-
-5. In the Project Navigator, select your application project and go to "Targets" -> "General"
-
-6. Click the `+` button under the "Frameworks, Libraries, and Embedded Content" section and `Add` the `LPLiquidSwiftTabBar.framework`
-
 ## How to use 
 
 ### Setup
@@ -131,6 +91,51 @@ tabBarItemTintColor | **UIColor** The color of the unselected items in the tab b
 tabBarSelectedItemTintColor | **UIColor** The tint color of the selected item in the tab bar | .black
 tabBarItemFont | **UIFont** The font of the text of the selected tab bar item | UIFont.systemFont(ofSize: 16.0)
 animationDuration | **Double** The duration of the animations ofthe switch of `UIViewController` and tab bar selected item | 0.25
+
+## Requirements
+* iOS 11.0+
+* Xcode 11+
+* Swift 5+
+
+## Installation 
+
+### CocoaPods
+
+`LPLiquidSwiftTabBar` is available for installation trough [CocoaPods](https://cocoapods.org). For usage and installation instruction, visit their website.
+To install this library simply add this line in your `Podfile`:
+```
+pod 'LPLiquidSwiftTabBar'
+```
+
+### Carthage
+
+`LPLiquidSwiftTabBar` is available for installation trough [Carthage](https://github.com/Carthage/Carthage). For usage and installation instruction, visit their website.
+To integrate this library add this line in your `Cartfile`:
+```
+github "Pizzo15/LPLiquidSwiftTabBar"
+```
+
+### Manual
+
+1. Open up Terminal application and `cd` into your iOS project directory
+
+2. **ONLY IF** your project is not already initialized as a git repository, run
+```
+$ git init
+```
+
+3. Add `LPLiquidSwiftTabBar` as a submodule by running
+```
+$ git submodule add https://github.com/Pizzo15/LPLiquidSwiftTabBar.git
+```
+
+4. Open the project folder and drag the `LPLiquidSwiftTabBar.xcodeproj` file into the Project Navigator of your application.
+You should drag it at the same level of your blue project icon.
+Then click Save on the Xcode dialog that shows up.
+
+5. In the Project Navigator, select your application project and go to "Targets" -> "General"
+
+6. Click the `+` button under the "Frameworks, Libraries, and Embedded Content" section and `Add` the `LPLiquidSwiftTabBar.framework`
 
 ## License
 
